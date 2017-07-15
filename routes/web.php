@@ -12,6 +12,6 @@
 */
 
 $listTaskController = function () {
-    return view('welcome');
+    return view('list_items');//todo: implements /resources/views/list_items.blade.php
 };
 Route::get('/', $listTaskController);
