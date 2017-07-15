@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+$listTaskController = function () {
     return view('welcome');
-});
+};
+Route::get('/', $listTaskController);
