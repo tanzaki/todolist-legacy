@@ -15,6 +15,9 @@ use Illuminate\Database\Eloquent\Model;
  * Class Task
  * @package App
  * @mixin \Eloquent
+ * @property int id
+ * @property string title
+ * @property string is_done
  */
 class Task extends Model
 {
