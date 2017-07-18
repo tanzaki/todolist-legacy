@@ -1,4 +1,10 @@
 @extends('layout')
 @section('content')
-    <div><?php echo $tasksItems;?></div>
+    <div>
+        <?php
+        use Illuminate\Database\Eloquent\Collection;
+        /** @var Collection|array $tasksItems */
+        echo $tasksItems;
+        ?>
+    </div>
 @endsection
