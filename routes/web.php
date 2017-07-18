@@ -20,3 +20,7 @@ $listTaskController = function () {
 };
 Route::get('/', $listTaskController);
 Route::get('/list', $listTaskController);
+$createTaskController = function (){
+    return view('create_task');
+};
+Route::get('/create', $createTaskController)->name('tasks.create');
