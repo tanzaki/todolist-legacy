@@ -1,4 +1,8 @@
 @extends('layout')
 @section('content')
-    This view extends layout.blade.php. This content be inserted where <@.yield('content')>
+    <form>
+        <h4>Create task</h4>
+        <input type="text">
+        <input type="submit" value="OK">
+    </form>
 @endsection
