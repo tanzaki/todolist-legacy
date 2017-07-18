@@ -4,7 +4,10 @@
         <?php
         use Illuminate\Database\Eloquent\Collection;
         /** @var Collection|array $tasksItems */
-        echo $tasksItems;
+        //TasksItems is special Object, We can foreach it as array
+        foreach ($tasksItems as $taskItem) {
+            echo "<div>$taskItem</div>";
+        }
         ?>
     </div>
 @endsection
