@@ -26,5 +26,7 @@ $createTaskController = function (){
 Route::get('/create', $createTaskController)->name('tasks.create');
 $storeTaskController = function (){
     echo 'We received form data';
+    echo '<br>';
+    echo request('task_title');
 };
 Route::post('/store', $storeTaskController)->name('tasks.store');
