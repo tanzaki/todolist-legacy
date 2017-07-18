@@ -28,5 +28,9 @@ $createTaskController = function (){
 Route::get('/create', $createTaskController)->name('tasks.create');
 $storeTaskController = function (){
     //and then we start again
+    $task = new Task();
+    $task->title = request('task_title');
+    //now, let prepare object Task for save it to Database
+    echo $task->title;
 };
 Route::post('/store', $storeTaskController)->name('tasks.store');
