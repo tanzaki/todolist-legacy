@@ -11,6 +11,8 @@
 |
 */
 
+use App\Task;
+
 $listTaskController = function () {
     $tasks = \App\Task::all();
     $data = [
@@ -25,8 +27,6 @@ $createTaskController = function (){
 };
 Route::get('/create', $createTaskController)->name('tasks.create');
 $storeTaskController = function (){
-    echo 'We received form data';
-    echo '<br>';
-    echo request('task_title');
+    //and then we start again
 };
 Route::post('/store', $storeTaskController)->name('tasks.store');
